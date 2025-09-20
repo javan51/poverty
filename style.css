@@ -1,0 +1,116 @@
+/* === Base Styles === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #4CAF50;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.stat {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Progress bar */
+.progress {
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 20px;
+  margin: 10px 0;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #4CAF50, #81c784);
+  height: 100%;
+  width: 0;
+}
+/* === Theme Variations === */
+body.default-theme{
+  --bg: #f4f4f9;
+  --primary: #4CAF50;
+  --text: #222;
+}
+
+body.vivid-theme {
+  --bg: #0f172a;
+  --primary: #e11d48;
+  --text: #fff;
+}
+
+body.candy-theme {
+  --bg: #fff0f6;
+  --primary: #ff6fb5;
+  --text: #333;
+}
+
+/* Apply theme variables */
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+header, .btn, h2 {
+  background: var(--primary);
+  color: white;
+}

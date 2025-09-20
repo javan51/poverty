@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Children Out of Poverty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Children Out of Poverty</h1>
+    <img src="image.png" alt="Children Out of Poverty Logo" style="max-width:120px; display:block; margin:0 auto 10px;">
+    <img src="image234.jpg" alt="Logo 2" style="max-width:100px; display:inline-block; margin:0 0 10px 10px;">
+    <p>Together we can release children from poverty</p>
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#impact">Impact</a>
+      <a href="#volunteer">Volunteer</a>
+      <a href="#donate">Donate</a>
+    </nav>
+    <div class="theme-switcher">
+      <button id="themeToggleBtn" onclick="cycleTheme()">Change Theme</button>
+    </div>
+  </header>
+
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>We aim to break the cycle of poverty by providing education, food, and opportunities to children and their families.</p>
+  </section>
+
+  <section id="impact">
+    <h2>Our Impact</h2>
+    <div class="stats">
+      <div class="stat"><span id="childrenCount">0</span><br>Children Supported</div>
+      <div class="stat"><span id="schoolsCount">0</span><br>Schools Partnered</div>
+      <div class="stat"><span id="volunteersCount">0</span><br>Volunteers</div>
+    </div>
+  </section>
+
+  <section id="volunteer">
+    <h2>Get Involved</h2>
+    <p>Join us as a volunteer tutor, mentor, or fundraiser. Your time and effort can change lives.</p>
+    <a href="#" class="btn">Sign Up</a>
+  </section>
+
+  <section id="donate">
+    <h2>Donate</h2>
+    <p>Your donation helps provide food, school supplies, and safe spaces for children.</p>
+    <div class="progress">
+      <div class="progress-fill" id="progressBar"></div>
+    </div>
+    <button class="btn" onclick="donate(10)">$10</button>
+    <button class="btn" onclick="donate(25)">$25</button>
+    <button class="btn" onclick="donate(50)">$50</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Children Out of Poverty. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
